@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+</head>
+<body>
+
+<header class="custom-header">
+    <!-- Left White Section -->
+    <div class="header-left">
+      <img src="./gallery/RT_half_Logo.jpg" alt="RaphaeTours" height="70" width="50">
+      <h1><span style="color:#0a72f6 ;" >Raphae</span> <span style="color: #ff9900;" >Tours</span> </h1>
+      
+    </div>
+  <img src="gallery/Untitled design.jpg" alt="swirl" height="250" width="450">
+      
+    
+  
+    <!-- Right Blue Section -->
+    <div class="header-right">
+      <nav>
+        
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <!-- Hero Banner -->
+   <div class="services">
+      <h1 class="hero-services"> <span style="color: #ff9900;">Our</span> <span style="color: #0a72f6;">Services</span> </h1>
+      <p>Making your travel dreams a reality</p>
+    </div>
+  
+  
+  <!-- Services Grid -->
+  <section class="py-5 container">
+    <div class="row g-4">
+      <!-- Service 1 -->
+      <div class="col-md-4 text-center">
+        <div class="service-card p-4 shadow-sm rounded h-100">
+          <img src="gallery/service1.jpg" class="img-fluid rounded mb-3" alt="Custom Travel Packages">
+          <h4>Custom Travel </h4>
+          <p>We design trips tailored to your preferred destinations</p>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="col-md-4 text-center">
+        <div class="service-card p-4 shadow-sm rounded h-100">
+          <img src="gallery/service2.jpg" class="img-fluid rounded mb-3" alt="Guided Tours">
+          <h4>Guided Tours</h4>
+          <p>Explore with expert guides who know the best spots and hidden gems.</p>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="col-md-4 text-center">
+        <div class="service-card p-4 shadow-sm rounded h-100">
+          <img src="gallery/service3.jpg" class="img-fluid rounded mb-3" alt="Corporate Travel">
+          <h4>Corporate Travel</h4>
+          <p>Business trips made simple with our professional corporate travel services.</p>
+        </div>
+      </div>
+      <!-- Service 4 -->
+      <div class="col-md-4 text-center">
+        <div class="service-card p-4 shadow-sm rounded h-100">
+          <img src="gallery/service4.jpg" class="img-fluid rounded mb-3" alt="Honeymoon Packages">
+          <h4>Honeymoon Packages</h4>
+          <p>Romantic getaways curated for newlyweds to create unforgettable memories.</p>
+        </div>
+      </div>
+      <!-- Service 5 -->
+      <div class="col-md-4 text-center">
+        <div class="service-card p-4 shadow-sm rounded h-100">
+          <img src="gallery/service5.jpg" class="img-fluid rounded mb-3" alt="Visa Assistance">
+          <h4>Visa Assistance</h4>
+          <p>Hassle-free visa support to get you ready for your dream trip.</p>
+        </div>
+      </div>
+      <!-- Service 6 -->
+      <div class="col-md-4 text-center">
+        <div class="service-card p-4 shadow-sm rounded h-100">
+          <img src="gallery/service6.jpg" class="img-fluid rounded mb-3" alt="Airport Transfers">
+          <h4>Airports</h4>
+          <p>Comfortable and reliable </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Call to Action -->
+  <section class="services-cta">
+    <h2>Ready to plan your next trip?</h2>
+    <p>Let Raphae Tours create a travel experience you'll never forget.</p>
+    <a href="contact.html" class="bkg services-bkg">Contact Us</a>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Raphae Tours. All rights reserved.</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll("header nav ul li a").forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active-page");
+        }
+      });
+    });
+    </script>
+
+    </body>
+</html>

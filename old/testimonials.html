@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+
+</head>
+<body>
+
+<header class="custom-header">
+    <!-- Left White Section -->
+    <div class="header-left">
+      <img src="./gallery/RT_half_Logo.jpg" alt="RaphaeTours" height="70" width="50">
+      <h1><span style="color:#0a72f6 ;" >Raphae</span> <span style="color: #ff9900;" >Tours</span> </h1>
+      
+    </div>
+  <img src="gallery/Untitled design.jpg" alt="swirl" height="250" width="450">
+      
+    
+  
+    <!-- Right Blue Section -->
+    <div class="header-right">
+      <nav>
+        
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <!-- Hero Section -->
+  
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      
+      <div class="testimonials-grid">
+        <article class="testi-card" style="--i:0" role="article" aria-label="Testimonial from Jane">
+          <img src="assets/img/testi1.jpg" alt="Jane Doe" class="testi-avatar">
+          <div class="testi-content">
+            <p class="testi-quote">“Raphae Tours handled everything — from the itinerary to local tips. Truly seamless and unforgettable.”</p>
+            <div class="testi-meta">
+              <h4 class="testi-name">Jane Doe</h4>
+              <div class="testi-stars" aria-hidden="true">★★★★★</div>
+              <div class="testi-location">— Lagos, Nigeria</div>
+            </div>
+          </div>
+        </article>
+  
+        <article class="testi-card" style="--i:1" role="article" aria-label="Testimonial from Ahmed">
+          <img src="assets/img/testi2.jpg" alt="Ahmed Bello" class="testi-avatar">
+          <div class="testi-content">
+            <p class="testi-quote">“Big thanks to the team — great guides and the food stops were perfect. Highly recommended!”</p>
+            <div class="testi-meta">
+              <h4 class="testi-name">Ahmed Bello</h4>
+              <div class="testi-stars" aria-hidden="true">★★★★★</div>
+              <div class="testi-location">— Abuja, Nigeria</div>
+            </div>
+          </div>
+        </article>
+  
+        <article class="testi-card" style="--i:2" role="article" aria-label="Testimonial from Maria">
+          <img src="assets/img/testi3.jpg" alt="Maria Okonkwo" class="testi-avatar">
+          <div class="testi-content">
+            <p class="testi-quote">“We felt safe and well-cared for. The small touches made the trip special — thank you Raphae!”</p>
+            <div class="testi-meta">
+              <h4 class="testi-name">Maria Okonkwo</h4>
+              <div class="testi-stars" aria-hidden="true">★★★★★</div>
+              <div class="testi-location">— Enugu, Nigeria</div>
+            </div>
+          </div>
+        </article>
+      </div>
+  
+      
+    </div>
+  </section>
+  <!-- Call to Action -->
+  <section class="cta-section text-white text-center p-5">
+    <h2>Want to be our next happy traveler?</h2>
+    <p>Let’s plan your next dream trip together.</p>
+    <a href="booking.html" class="bkg">Book Now</a>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Raphae Tours. All rights reserved.</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      document.querySelectorAll("header nav ul li a").forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active-page");
+        }
+      });
+    });
+    </script>
+    
+</body>
+</html>

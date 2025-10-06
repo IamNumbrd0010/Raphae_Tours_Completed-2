@@ -1,0 +1,25 @@
+.about-hero {
+    height: 50vh;
+    background: url('gallery/about-hero.jpg') center/cover no-repeat;
+  }
+  
+  h1, h2, h4 {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  .bkg {
+    background-color: #ff9900;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .bkg:hover {
+    background-color: #cc7a00;
+  }
+  

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+
+  <header class="custom-header">
+    <!-- Left White Section -->
+    <div class="header-left">
+      <img src="./gallery/RT_half_Logo.jpg" alt="RaphaeTours" height="70" width="50">
+      <h1><span style="color:#0a72f6 ;" >Raphae</span> <span style="color: #ff9900;" >Tours</span> </h1>
+      
+    </div>
+  <img src="gallery/Untitled design.jpg" alt="swirl" height="250" width="450">
+      
+    
+  
+    <!-- Right Blue Section -->
+    <div class="header-right">
+      <nav>
+        
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= RAPHAE TOURS — Contact (Netlify-ready) ================= -->
+<!-- 1) Paste this in your contact page where you want the form to appear.
+     2) If deploying on Netlify, forms will be captured automatically.
+-->
+
+<style>
+  :root{
+    --primary: #0066cc;   /* match header -- change if needed */
+    --accent: #ffb347;
+    --muted: #666;
+    --form-bg: #ffffff;
+    --shadow: 0 10px 30px rgba(6,20,34,0.06);
+  }
+
+  .contact-section{
+    padding: 3rem 1.25rem;
+    background: #fafbff;
+    color: #111;
+  }
+
+  .contact-wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  /* Left: Form */
+  .contact-form {
+    background: var(--form-bg);
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .contact-form h3 {
+    margin: 0 0 0.35rem 0;
+    color: var(--primary);
+    font-size: 1.25rem;
+  }
+
+  .contact-form p.lead {
+    margin: 0 0 1rem 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .form-row .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+  }
+
+  label {
+    font-size: 0.86rem;
+    color: #333;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+  }
+
+  input[type="text"], input[type="email"], input[type="tel"], textarea, select, input[type="date"] {
+    padding: 0.7rem 0.85rem;
+    border-radius: 8px;
+    border: 1px solid #e6e9f0;
+    background: #fff;
+    font-size: 0.95rem;
+    color: #111;
+  }
+
+  textarea { min-height: 120px; resize: vertical; }
+
+  .small {
+    font-size: 0.84rem;
+    color: var(--muted);
+  }
+
+  .contact-actions {
+    display:flex;
+    gap:0.6rem;
+    align-items:center;
+    margin-top: 0.5rem;
+  }
+
+  .btn {
+    display:inline-block;
+    background: linear-gradient(180deg, var(--accent), #ff9f4d);
+    color: #000;
+    padding: 0.55rem 0.95rem;
+    border-radius: 8px;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(255,160,60,0.12);
+  }
+  .btn.secondary {
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid rgba(0,102,204,0.12);
+    font-weight:700;
+  }
+
+  .form-note { color: var(--muted); font-size: 0.86rem; margin-left: 0.4rem; }
+
+  /* Right: Info panel */
+  .contact-info {
+    background: linear-gradient(180deg,#fff,#fbfdff);
+    padding: 1.25rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .info-item { margin-bottom: 1rem; }
+  .info-item h4 { margin:0 0 0.35rem 0; color:var(--primary); font-size:0.98rem; }
+  .info-item p { margin:0; color:var(--muted); font-size:0.93rem; }
+
+  .map-placeholder {
+    background: linear-gradient(135deg,#e9f3ff,#fff);
+    height: 160px;
+    border-radius: 10px;
+    margin-top: 0.6rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color: var(--muted);
+    font-weight:600;
+    border: 1px dashed rgba(0,0,0,0.04);
+  }
+
+  /* success / error */
+  .form-status { margin-top: 0.8rem; font-size:0.95rem; }
+  .success { color: #0b9b50; }
+  .error { color: #c0392b; }
+
+  /* responsive */
+  @media (max-width: 940px){
+    .contact-wrap{ grid-template-columns: 1fr; }
+    .contact-info { order: 2; }
+  }
+</style>
+
+<section class="contact-section" id="contact">
+  <div class="contact-wrap">
+
+    <!-- ======= FORM (Netlify-ready) ======= -->
+    <!-- NOTE: change form-name if you want multiple distinct Netlify forms -->
+    <form name="raphae-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
+          class="contact-form" id="raphaeContactForm">
+      <!-- Netlify required hidden input -->
+      <input type="hidden" name="form-name" value="raphae-contact">
+
+      <!-- Honeypot field (hidden from users) -->
+      <input type="hidden" name="bot-field" id="bot-field" />
+
+      <h3>Book with Raphae Tours</h3>
+      <p class="lead">Questions, booking requests or custom itineraries? Send us a message and we’ll get back to you within 24 hours.</p>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required placeholder="Jane Traveler">
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="+234 800 000 0000">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field" style="flex:1">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+        </div>
+
+        <div class="field" style="flex:0.9">
+          <label for="tour">Preferred Country</label>
+          <select id="tour" name="tour">
+            <option value="">— Select a country —</option>
+            <option>Usa</option>
+            <option>UK</option>
+            <option>Canada</option>
+            <option>Australia</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+          <!-- <div class="field" style="flex:1">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div> -->
+  
+          <div class="field" style="flex:0.9">
+              <label for="tour">Preferred plan</label>
+              <select id="tour" name="tour[]">
+                <option value="">— Select a country —</option>
+                <option>Global Talent</option>
+                <option>Ebniw</option>
+                <option>o-1 visa</option>
+                <option>Green card</option>
+                <option>Work Permit</option>
+              </select>
+            </div>
+            
+        </div>
+
+      <!-- <div class="form-row">
+        <div class="field">
+          <label for="startDate">Start date</label>
+          <input id="startDate" name="startDate" type="date">
+        </div>
+        <div class="field">
+          <label for="endDate">End date</label>
+          <input id="endDate" name="endDate" type="date">
+        </div>
+      </div> -->
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us about any requests..." required></textarea>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:0.6rem; margin-top:0.2rem;">
+        <input id="consent" name="consent" type="checkbox" value="yes" required>
+        <label for="consent" class="small">I consent to Raphae Tours contacting me regarding this enquiry.</label>
+      </div>
+
+      <div class="contact-actions">
+        <button type="submit" class="btn">Send message</button>
+        <button type="reset" class="btn secondary">Reset</button>
+        <div class="form-note">We aim to reply within 24 hours.</div>
+      </div>
+
+      <div class="form-status" id="formStatus" aria-live="polite"></div>
+    </form>
+
+    <!-- ======= INFO PANEL ======= -->
+    <aside class="contact-info" aria-label="Contact information">
+      <div class="info-item">
+        <h4>Office</h4>
+        <p>12 Seidu Ajibowu Ikeja</p>
+      </div>
+
+      <div class="info-item">
+        <h4>Phone</h4>
+        <p>+234 816 329 5297</p>
+      </div>
+
+      <div class="info-item">
+        <h4>Email</h4>
+        <p>smiles@raphae.tech</p>
+      </div>
+
+      <div class="info-item">
+        <h4>Hours</h4>
+        <p>Mon — Fri: 9:00 — 17:00</p>
+      </div>
+
+      <div class="map-placeholder">Map placeholder (replace with embed)</div>
+    </aside>
+  </div>
+</section>
+
+<script>
+  /* Lightweight client-side validation + friendly UX for Netlify forms.
+     - If you prefer native Netlify behaviour (page reload to success page), remove this event listener.
+     - This JS uses fetch to POST form data to Netlify endpoint so site doesn't navigate away.
+  */
+  (function(){
+    const form = document.getElementById('raphaeContactForm');
+    const status = document.getElementById('formStatus');
+
+    // Helper to show status
+    function show(msg, cls='') {
+      status.textContent = msg;
+      status.className = 'form-status ' + (cls || '');
+    }
+
+    // If JS disabled, Netlify will still accept the POST because of data-netlify="true".
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+
+      // Simple validation
+      const name = form.querySelector('#name').value.trim();
+      const email = form.querySelector('#email').value.trim();
+      const message = form.querySelector('#message').value.trim();
+      const consent = form.querySelector('#consent').checked;
+      const bot = form.querySelector('#bot-field').value;
+
+      if (bot) {
+        // honeypot filled -> probably a bot
+        return;
+      }
+      if (!name || !email || !message || !consent) {
+        show('Please complete all required fields and accept contact consent.', 'error');
+        return;
+      }
+
+      show('Sending…');
+
+      // Build form data exactly as Netlify expects
+      const formData = new FormData(form);
+
+      fetch('/', {
+        method: 'POST',
+        body: formData
+      })
+      .then(function(res){
+        if (res.ok) {
+          show('Thanks — your message was sent!', 'success');
+          form.reset();
+        } else {
+          return res.text().then(t => { throw new Error(t || 'Network response not OK'); });
+        }
+      })
+      .catch(function(err){
+        console.error(err);
+        show('Sorry — there was a problem sending your message. Try again later.', 'error');
+      });
+    });
+  })();
+</script>
+
+<!-- ================= end contact block ================= -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll("header nav ul li a").forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active-page");
+      }
+    });
+  });
+  </script>
+  
+</body>
+</html>
